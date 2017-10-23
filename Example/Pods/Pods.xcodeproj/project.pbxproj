@@ -8,15 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		34CAF0DFC162EF0B988DC6947864AFC3 /* Pods-ISVImageScrollView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6135DA6E1F81980C2375CBEEE66CCCDB /* Pods-ISVImageScrollView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		359C06A03DC46E3866D93B408BC441C4 /* ISVImageScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C73F9C22373922397205EFAA9D29933 /* ISVImageScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		47BC621171FCFC6D17ABC29DFAE3B196 /* Pods-ISVImageScrollView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBF19784ECA62797B82B8CEBDA03361 /* Pods-ISVImageScrollView_Tests-dummy.m */; };
-		5331881F569CE3BABE0A52F14D7B4893 /* ISVImageScrollView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CD1CA1658088AAF1D031A7B605F90BF1 /* ISVImageScrollView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8B6FAD853362E33CC67155A674D2CD59 /* ISVImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 789F4C1FC238158E4ED2ED9659061B1D /* ISVImageScrollView.m */; };
+		5AA1332409541D80AFD7154A3585C45D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		66E3692E6ADB8CD0B2ABAC08B41A4A3F /* ISVImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 393F2A3B74CE1F35A5CF02F41E04ECA3 /* ISVImageScrollView.m */; };
+		78045983C3FE356CBE55B17E121432D5 /* ISVImageScrollView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BADC4CE5F6D6906F3FCEDC7AB1434C86 /* ISVImageScrollView-dummy.m */; };
 		9E574DD5931794A54A6CCD4A8C85CFF5 /* Pods-ISVImageScrollView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B50787DCC366075B5D766467E65CD44 /* Pods-ISVImageScrollView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A15A616D818017D4322B756C3348C3B3 /* ISVImageScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = B9116087AE42689378CF728F66C949D9 /* ISVImageScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A64C8A25ADA83F3E72E65425955F4E28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		B15DFD8A9852EC6C0C16DAC0EA14433A /* ISVImageScrollView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C23B562CBD8B5EDDC0F99E63B372C9 /* ISVImageScrollView-dummy.m */; };
 		BC47CA052D00595CE865CB3F6325D49B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		D66448B9FD8F3AAA56FE1BA080987E54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		D145A41F16837A00301D32F80F77E5AA /* ISVImageScrollView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF0399A14DD3C3CC2363B7C6DD304D7 /* ISVImageScrollView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DCDD5540551A60B217BDBBAD3448C928 /* Pods-ISVImageScrollView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D24D28A4DA6E917D58909C7D05531B54 /* Pods-ISVImageScrollView_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +25,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CA2922F8B2AE5BF20A8833B307AE9F11;
+			remoteGlobalIDString = 1C0018B8D4C4CA5CFA0004C2738B6B36;
 			remoteInfo = ISVImageScrollView;
 		};
 /* End PBXContainerItemProxy section */
@@ -33,37 +33,37 @@
 /* Begin PBXFileReference section */
 		12D3039BCBE135716BEAE64676FAE3E0 /* Pods-ISVImageScrollView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ISVImageScrollView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1E22ECC3BF74120FF220D3EA0D713E7A /* Pods-ISVImageScrollView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ISVImageScrollView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		34A8E6CDFB1FA054E590B50684E58A76 /* ISVImageScrollView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ISVImageScrollView.modulemap; sourceTree = "<group>"; };
 		35B84FDD5F47D11395057944EF95597F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		393F2A3B74CE1F35A5CF02F41E04ECA3 /* ISVImageScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISVImageScrollView.m; path = ISVImageScrollView/Classes/ISVImageScrollView.m; sourceTree = "<group>"; };
 		435B7EE7689604755C9E81BEABF0D920 /* Pods-ISVImageScrollView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ISVImageScrollView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		448F9E68419701F57EAA8F433C6910EF /* Pods-ISVImageScrollView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ISVImageScrollView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		487BEA9FB34B427960130EFB71B5043E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EAD16CB9D306705260F1082440D2CFC /* Pods-ISVImageScrollView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ISVImageScrollView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6135DA6E1F81980C2375CBEEE66CCCDB /* Pods-ISVImageScrollView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ISVImageScrollView_Example-umbrella.h"; sourceTree = "<group>"; };
+		659DD302C14461BD43EF63C74300D39A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6B50787DCC366075B5D766467E65CD44 /* Pods-ISVImageScrollView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ISVImageScrollView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		72161A77B4318F85DD2AC8D027E79D08 /* Pods-ISVImageScrollView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ISVImageScrollView_Example-resources.sh"; sourceTree = "<group>"; };
-		789F4C1FC238158E4ED2ED9659061B1D /* ISVImageScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ISVImageScrollView.m; path = ISVImageScrollView/Classes/ISVImageScrollView.m; sourceTree = "<group>"; };
 		7FCEC1822132B266BEBE5585BA58374F /* Pods-ISVImageScrollView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ISVImageScrollView_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		80BDB383C7B7A4C85A21CA9C2F11B2C4 /* Pods-ISVImageScrollView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ISVImageScrollView_Tests.modulemap"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		80BDB383C7B7A4C85A21CA9C2F11B2C4 /* Pods-ISVImageScrollView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ISVImageScrollView_Tests.modulemap"; sourceTree = "<group>"; };
+		8103E500A5680A5B1A186C4BC8641E96 /* ISVImageScrollView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ISVImageScrollView.modulemap; sourceTree = "<group>"; };
+		8CF0399A14DD3C3CC2363B7C6DD304D7 /* ISVImageScrollView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ISVImageScrollView-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		953A42D702C25D591804CCF28FBDC1B9 /* Pods-ISVImageScrollView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ISVImageScrollView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		9C73F9C22373922397205EFAA9D29933 /* ISVImageScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISVImageScrollView.h; path = ISVImageScrollView/Classes/ISVImageScrollView.h; sourceTree = "<group>"; };
-		9D756AFFDA1C55113D6498B5B72F4AC0 /* ISVImageScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ISVImageScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9E5C0239D2BBF5424EF9D24950B8FFD7 /* ISVImageScrollView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ISVImageScrollView.xcconfig; sourceTree = "<group>"; };
-		A7CF0069C1D79ABCB8AD60485F9B9D88 /* Pods-ISVImageScrollView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ISVImageScrollView_Example.modulemap"; sourceTree = "<group>"; };
-		A9C23B562CBD8B5EDDC0F99E63B372C9 /* ISVImageScrollView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ISVImageScrollView-dummy.m"; sourceTree = "<group>"; };
+		9D756AFFDA1C55113D6498B5B72F4AC0 /* ISVImageScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ISVImageScrollView.framework; path = ISVImageScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7CF0069C1D79ABCB8AD60485F9B9D88 /* Pods-ISVImageScrollView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ISVImageScrollView_Example.modulemap"; sourceTree = "<group>"; };
 		AC1575B0A412F1D84225F9257B0285BF /* Pods-ISVImageScrollView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ISVImageScrollView_Example-frameworks.sh"; sourceTree = "<group>"; };
 		AF63E3D721621C98C6D05574205D2CFA /* Pods-ISVImageScrollView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ISVImageScrollView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B7D3BB974BCEF751D7E1974F9BD7C1D0 /* Pods-ISVImageScrollView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ISVImageScrollView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		BE37EB7E277476CF08BF0BE1BB6F3DD7 /* Pods_ISVImageScrollView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ISVImageScrollView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C95F3FC94894F1453DD1D9FDA9F82BF3 /* Pods_ISVImageScrollView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ISVImageScrollView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD1CA1658088AAF1D031A7B605F90BF1 /* ISVImageScrollView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ISVImageScrollView-umbrella.h"; sourceTree = "<group>"; };
+		B8617406F1A88ACEA07D0BF0184DD69E /* ISVImageScrollView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ISVImageScrollView.xcconfig; sourceTree = "<group>"; };
+		B9116087AE42689378CF728F66C949D9 /* ISVImageScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISVImageScrollView.h; path = ISVImageScrollView/Classes/ISVImageScrollView.h; sourceTree = "<group>"; };
+		BADC4CE5F6D6906F3FCEDC7AB1434C86 /* ISVImageScrollView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ISVImageScrollView-dummy.m"; sourceTree = "<group>"; };
+		BE37EB7E277476CF08BF0BE1BB6F3DD7 /* Pods_ISVImageScrollView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ISVImageScrollView_Example.framework; path = "Pods-ISVImageScrollView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C95F3FC94894F1453DD1D9FDA9F82BF3 /* Pods_ISVImageScrollView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ISVImageScrollView_Tests.framework; path = "Pods-ISVImageScrollView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBF19784ECA62797B82B8CEBDA03361 /* Pods-ISVImageScrollView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ISVImageScrollView_Tests-dummy.m"; sourceTree = "<group>"; };
 		D196D8C5BEC99379EE6E2EDCCA44D985 /* Pods-ISVImageScrollView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ISVImageScrollView_Tests-resources.sh"; sourceTree = "<group>"; };
 		D24D28A4DA6E917D58909C7D05531B54 /* Pods-ISVImageScrollView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ISVImageScrollView_Example-dummy.m"; sourceTree = "<group>"; };
+		D7BAA06F8CDB07968C757B3A37FE5A8C /* ISVImageScrollView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ISVImageScrollView-prefix.pch"; sourceTree = "<group>"; };
 		E3A2D6736279D8B2EECAA1E16C8948A5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EDB54C43200029E2C92FC523F8F8D5D3 /* ISVImageScrollView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ISVImageScrollView-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,25 +83,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B4CF1D416364616611D56793109606DB /* Frameworks */ = {
+		E5DDEA7278DB2F60385364B0B89880AC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D66448B9FD8F3AAA56FE1BA080987E54 /* Foundation.framework in Frameworks */,
+				5AA1332409541D80AFD7154A3585C45D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1DAEC1FFD7B7AF3211C12F705B658121 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6E3F0C0C17592B6487523D83A1BEC5BB /* ISVImageScrollView */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		40AB39AFCDEE75176DD3964A9778518D /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +111,20 @@
 				C95F3FC94894F1453DD1D9FDA9F82BF3 /* Pods_ISVImageScrollView_Tests.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		63A4848355B06177E4226799A6816A1B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				659DD302C14461BD43EF63C74300D39A /* Info.plist */,
+				8103E500A5680A5B1A186C4BC8641E96 /* ISVImageScrollView.modulemap */,
+				B8617406F1A88ACEA07D0BF0184DD69E /* ISVImageScrollView.xcconfig */,
+				BADC4CE5F6D6906F3FCEDC7AB1434C86 /* ISVImageScrollView-dummy.m */,
+				D7BAA06F8CDB07968C757B3A37FE5A8C /* ISVImageScrollView-prefix.pch */,
+				8CF0399A14DD3C3CC2363B7C6DD304D7 /* ISVImageScrollView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ISVImageScrollView";
 			sourceTree = "<group>";
 		};
 		6815D4A455DA863A8B00CDBA19512F9A /* Pods-ISVImageScrollView_Tests */ = {
@@ -139,12 +145,12 @@
 			path = "Target Support Files/Pods-ISVImageScrollView_Tests";
 			sourceTree = "<group>";
 		};
-		6E3F0C0C17592B6487523D83A1BEC5BB /* ISVImageScrollView */ = {
+		716C9679EA24FC5FAFB688397919EDDD /* ISVImageScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				9C73F9C22373922397205EFAA9D29933 /* ISVImageScrollView.h */,
-				789F4C1FC238158E4ED2ED9659061B1D /* ISVImageScrollView.m */,
-				E9937F7910369FE520C99D5C47BB7541 /* Support Files */,
+				B9116087AE42689378CF728F66C949D9 /* ISVImageScrollView.h */,
+				393F2A3B74CE1F35A5CF02F41E04ECA3 /* ISVImageScrollView.m */,
+				63A4848355B06177E4226799A6816A1B /* Support Files */,
 			);
 			name = ISVImageScrollView;
 			path = ../..;
@@ -154,7 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				1DAEC1FFD7B7AF3211C12F705B658121 /* Development Pods */,
+				BA7329D5635F12BD40A46404D1848DB9 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				5D79E47C92878D34D42DB15BBE1FA30F /* Products */,
 				40AB39AFCDEE75176DD3964A9778518D /* Targets Support Files */,
@@ -179,6 +185,14 @@
 			path = "Target Support Files/Pods-ISVImageScrollView_Example";
 			sourceTree = "<group>";
 		};
+		BA7329D5635F12BD40A46404D1848DB9 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				716C9679EA24FC5FAFB688397919EDDD /* ISVImageScrollView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,20 +209,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		E9937F7910369FE520C99D5C47BB7541 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				487BEA9FB34B427960130EFB71B5043E /* Info.plist */,
-				34A8E6CDFB1FA054E590B50684E58A76 /* ISVImageScrollView.modulemap */,
-				9E5C0239D2BBF5424EF9D24950B8FFD7 /* ISVImageScrollView.xcconfig */,
-				A9C23B562CBD8B5EDDC0F99E63B372C9 /* ISVImageScrollView-dummy.m */,
-				EDB54C43200029E2C92FC523F8F8D5D3 /* ISVImageScrollView-prefix.pch */,
-				CD1CA1658088AAF1D031A7B605F90BF1 /* ISVImageScrollView-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ISVImageScrollView";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -220,6 +220,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A125397533242457D72E8B06E9205C4D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D145A41F16837A00301D32F80F77E5AA /* ISVImageScrollView-umbrella.h in Headers */,
+				A15A616D818017D4322B756C3348C3B3 /* ISVImageScrollView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C738F4FEAE414C1356FEA76D73946ABD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -228,18 +237,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E68DDC9F08500ED1024BF6C6DD4EE1AB /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5331881F569CE3BABE0A52F14D7B4893 /* ISVImageScrollView-umbrella.h in Headers */,
-				359C06A03DC46E3866D93B408BC441C4 /* ISVImageScrollView.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1C0018B8D4C4CA5CFA0004C2738B6B36 /* ISVImageScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 502FCF4A79C600A2E69619F126410602 /* Build configuration list for PBXNativeTarget "ISVImageScrollView" */;
+			buildPhases = (
+				B2ACF05B01448816070D59BA348423D2 /* Sources */,
+				E5DDEA7278DB2F60385364B0B89880AC /* Frameworks */,
+				A125397533242457D72E8B06E9205C4D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ISVImageScrollView;
+			productName = ISVImageScrollView;
+			productReference = 9D756AFFDA1C55113D6498B5B72F4AC0 /* ISVImageScrollView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		56C4D5A4EDE5FE334DF6BA8070013216 /* Pods-ISVImageScrollView_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3274C8B9270E48A7DD1065451DAA0BD4 /* Build configuration list for PBXNativeTarget "Pods-ISVImageScrollView_Example" */;
@@ -275,23 +292,6 @@
 			productReference = C95F3FC94894F1453DD1D9FDA9F82BF3 /* Pods_ISVImageScrollView_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CA2922F8B2AE5BF20A8833B307AE9F11 /* ISVImageScrollView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CCD7516D8B62E3D47A422A5958A52140 /* Build configuration list for PBXNativeTarget "ISVImageScrollView" */;
-			buildPhases = (
-				5868A2D4CFC6DA98CB0C91D69A88E6D9 /* Sources */,
-				B4CF1D416364616611D56793109606DB /* Frameworks */,
-				E68DDC9F08500ED1024BF6C6DD4EE1AB /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ISVImageScrollView;
-			productName = ISVImageScrollView;
-			productReference = 9D756AFFDA1C55113D6498B5B72F4AC0 /* ISVImageScrollView.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -313,7 +313,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CA2922F8B2AE5BF20A8833B307AE9F11 /* ISVImageScrollView */,
+				1C0018B8D4C4CA5CFA0004C2738B6B36 /* ISVImageScrollView */,
 				56C4D5A4EDE5FE334DF6BA8070013216 /* Pods-ISVImageScrollView_Example */,
 				7955F7C6FFF40B3B160A39E62DBD784E /* Pods-ISVImageScrollView_Tests */,
 			);
@@ -321,20 +321,20 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5868A2D4CFC6DA98CB0C91D69A88E6D9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B15DFD8A9852EC6C0C16DAC0EA14433A /* ISVImageScrollView-dummy.m in Sources */,
-				8B6FAD853362E33CC67155A674D2CD59 /* ISVImageScrollView.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8AEBB1016FA9484873B30C01CAFD4452 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				47BC621171FCFC6D17ABC29DFAE3B196 /* Pods-ISVImageScrollView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2ACF05B01448816070D59BA348423D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78045983C3FE356CBE55B17E121432D5 /* ISVImageScrollView-dummy.m in Sources */,
+				66E3692E6ADB8CD0B2ABAC08B41A4A3F /* ISVImageScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +352,7 @@
 		C4FE208C32DCCD500E024527A8BFECAB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ISVImageScrollView;
-			target = CA2922F8B2AE5BF20A8833B307AE9F11 /* ISVImageScrollView */;
+			target = 1C0018B8D4C4CA5CFA0004C2738B6B36 /* ISVImageScrollView */;
 			targetProxy = 51984052CD6C73D252D80ECA56DCABE2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -391,9 +391,9 @@
 			};
 			name = Release;
 		};
-		1DE125791D7B414A86F631D5E13A4679 /* Release */ = {
+		17697B286259C8AE3042556AE93A95F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E5C0239D2BBF5424EF9D24950B8FFD7 /* ISVImageScrollView.xcconfig */;
+			baseConfigurationReference = B8617406F1A88ACEA07D0BF0184DD69E /* ISVImageScrollView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -415,11 +415,10 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -568,9 +567,9 @@
 			};
 			name = Release;
 		};
-		B7FE6C63B136FD91C4E0C3A6E8382ADA /* Debug */ = {
+		A972B3CF3AEDD6F5DAF12E9608CA51E4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E5C0239D2BBF5424EF9D24950B8FFD7 /* ISVImageScrollView.xcconfig */;
+			baseConfigurationReference = B8617406F1A88ACEA07D0BF0184DD69E /* ISVImageScrollView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -592,10 +591,11 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		C5F279DC37AF558C516AC29B102278E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -683,20 +683,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		502FCF4A79C600A2E69619F126410602 /* Build configuration list for PBXNativeTarget "ISVImageScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17697B286259C8AE3042556AE93A95F1 /* Debug */,
+				A972B3CF3AEDD6F5DAF12E9608CA51E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9D936EB9E95A11E16B0605CAD1C57BC5 /* Build configuration list for PBXNativeTarget "Pods-ISVImageScrollView_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				46DD24971D58CD510E54A57B893E850C /* Debug */,
 				FBD93A1DE7D8A96C29D1A33E73632878 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CCD7516D8B62E3D47A422A5958A52140 /* Build configuration list for PBXNativeTarget "ISVImageScrollView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B7FE6C63B136FD91C4E0C3A6E8382ADA /* Debug */,
-				1DE125791D7B414A86F631D5E13A4679 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
