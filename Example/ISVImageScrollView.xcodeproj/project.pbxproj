@@ -24,6 +24,7 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		8E890F38C587962B891F9EEB /* Pods_ISVImageScrollView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B328765A62049E2888CA1D /* Pods_ISVImageScrollView_Example.framework */; };
 		D65568C3679195AE4F047C43 /* Pods_ISVImageScrollView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6D072D90AF00537CAC2B73 /* Pods_ISVImageScrollView_Tests.framework */; };
+		DE1D6D1B1F9E2EAA0021853B /* Photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE1D6D1A1F9E2EA90021853B /* Photo.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,13 +60,14 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		66051967B40031465ABA54F0 /* ISVImageScrollView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ISVImageScrollView.podspec; path = ../ISVImageScrollView.podspec; sourceTree = "<group>"; };
+		66051967B40031465ABA54F0 /* ISVImageScrollView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ISVImageScrollView.podspec; path = ../ISVImageScrollView.podspec; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8A4B3F9336069EE201091D09 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		B0DD974B92674C2D5D44EA64 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8A4B3F9336069EE201091D09 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B0DD974B92674C2D5D44EA64 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B91D09F0B2639FF7AC45FE6F /* Pods-ISVImageScrollView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISVImageScrollView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ISVImageScrollView_Tests/Pods-ISVImageScrollView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C3B328765A62049E2888CA1D /* Pods_ISVImageScrollView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ISVImageScrollView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE1D6D1A1F9E2EA90021853B /* Photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Photo.jpg; sourceTree = "<group>"; };
 		F618EFB2E308E2C920CD7FC1 /* Pods-ISVImageScrollView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISVImageScrollView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ISVImageScrollView_Example/Pods-ISVImageScrollView_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +140,7 @@
 				6003F5A5195388D20070C39A /* ISVViewController.h */,
 				6003F5A6195388D20070C39A /* ISVViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				DE1D6D1A1F9E2EA90021853B /* Photo.jpg */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -283,6 +286,7 @@
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				DE1D6D1B1F9E2EAA0021853B /* Photo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

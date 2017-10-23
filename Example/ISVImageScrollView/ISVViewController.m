@@ -7,8 +7,12 @@
 //
 
 #import "ISVViewController.h"
+#import "ISVImageScrollView.h"
 
-@interface ISVViewController ()
+@interface ISVViewController () <UIScrollViewDelegate>
+
+@property (strong, nonatomic) UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet ISVImageScrollView *imageScrollView;
 
 @end
 
@@ -17,13 +21,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    UIImage *image = [UIImage imageNamed:@"Photo.jpg" inBundle:nil compatibleWithTraitCollection:nil];
+    self.imageView = [[UIImageView alloc] initWithImage:image];
+    self.imageScrollView.imageView = self.imageView;
+    self.imageScrollView.maximumZoomScale = 4.0;
+    self.imageScrollView.delegate = self;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
+    return self.imageView;
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return YES;
 }
 
 @end
