@@ -1,0 +1,6 @@
+framework module ISVImageScrollView {
+  umbrella header "ISVImageScrollView-umbrella.h"
+
+  export *
+  module * { export * }
+}

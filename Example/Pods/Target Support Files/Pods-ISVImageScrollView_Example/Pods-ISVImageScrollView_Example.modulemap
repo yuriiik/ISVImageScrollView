@@ -1,0 +1,6 @@
+framework module Pods_ISVImageScrollView_Example {
+  umbrella header "Pods-ISVImageScrollView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
