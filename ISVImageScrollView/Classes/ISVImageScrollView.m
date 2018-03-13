@@ -21,7 +21,7 @@ static void *ScrollViewBoundsChangeNotificationContext = &ScrollViewBoundsChange
 
 @synthesize tap = _tap;
 
-#pragma mark - IBAction
+#pragma mark - Tap to Zoom
 
 -(UITapGestureRecognizer *)tap {
     if (_tap == nil) {
