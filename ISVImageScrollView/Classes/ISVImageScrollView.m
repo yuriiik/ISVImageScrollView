@@ -18,12 +18,27 @@ static void *ScrollViewBoundsChangeNotificationContext = &ScrollViewBoundsChange
 
 @implementation ISVImageScrollView
 
+#pragma mark - IBAction
+
+- (void)tapToZoom:(UIGestureRecognizer *)gestureRecognizer {
+    if (self.zoomScale > self.minimumZoomScale) {
+        [self setZoomScale:self.minimumZoomScale animated:YES];
+    } else {
+        [self setZoomScale:self.maximumZoomScale animated:YES];
+    }
+}
+
+
 #pragma mark - Private Methods
 
 - (void)configure {
     self.showsVerticalScrollIndicator = NO;
     self.showsHorizontalScrollIndicator = NO;
     [self startObservingBoundsChange];
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapToZoom:)];
+    tap.numberOfTapsRequired = 2;
+    [self addGestureRecognizer:tap];
 }
 
 - (void)setImageView:(UIImageView *)imageView {
