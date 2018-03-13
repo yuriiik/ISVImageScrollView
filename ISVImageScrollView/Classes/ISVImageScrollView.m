@@ -13,18 +13,35 @@ static void *ScrollViewBoundsChangeNotificationContext = &ScrollViewBoundsChange
 
 @property (nonatomic, readonly) CGFloat imageAspectRatio;
 @property (nonatomic) CGRect initialImageFrame;
+@property (strong, nonatomic, readonly) UITapGestureRecognizer *tap;
 
 @end
 
 @implementation ISVImageScrollView
 
+@synthesize tap = _tap;
+
 #pragma mark - IBAction
+
+-(UITapGestureRecognizer *)tap {
+    if (_tap == nil) {
+        _tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapToZoom:)];
+        _tap.numberOfTapsRequired = 2;
+    }
+    return _tap;
+}
 
 - (void)tapToZoom:(UIGestureRecognizer *)gestureRecognizer {
     if (self.zoomScale > self.minimumZoomScale) {
         [self setZoomScale:self.minimumZoomScale animated:YES];
     } else {
-        [self setZoomScale:self.maximumZoomScale animated:YES];
+        CGPoint tapLocation = [gestureRecognizer locationInView:self.imageView];
+        CGFloat zoomRectWidth = self.imageView.frame.size.width / self.maximumZoomScale;
+        CGFloat zoomRectHeight = self.imageView.frame.size.height / self.maximumZoomScale;
+        CGFloat zoomRectX = tapLocation.x - zoomRectWidth * 0.5;
+        CGFloat zoomRectY = tapLocation.y - zoomRectHeight * 0.5;
+        CGRect zoomRect = CGRectMake(zoomRectX, zoomRectY, zoomRectWidth, zoomRectHeight);
+        [self zoomToRect:zoomRect animated:YES];
     }
 }
 
@@ -35,19 +52,18 @@ static void *ScrollViewBoundsChangeNotificationContext = &ScrollViewBoundsChange
     self.showsVerticalScrollIndicator = NO;
     self.showsHorizontalScrollIndicator = NO;
     [self startObservingBoundsChange];
-    
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapToZoom:)];
-    tap.numberOfTapsRequired = 2;
-    [self addGestureRecognizer:tap];
 }
 
 - (void)setImageView:(UIImageView *)imageView {
     if (_imageView.superview == self) {
+        [_imageView removeGestureRecognizer:self.tap];
         [_imageView removeFromSuperview];
     }
     if (imageView) {
         _imageView = imageView;
         _initialImageFrame = CGRectNull;
+        _imageView.userInteractionEnabled = YES;
+        [_imageView addGestureRecognizer:self.tap];
         [self addSubview:imageView];
     }
 }
