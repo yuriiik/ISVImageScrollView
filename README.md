@@ -13,7 +13,8 @@ When you need to incorporate an image preview into your application, usually you
 
 ## Features
 
-* Zoom and scroll
+* Pinch to zoom and scroll
+* Tap to zoom
 * Scale image when scroll view bounds change, e.g. after rotation
 * Set appropriate content offset after rotation to make sure visible content remains the same
 

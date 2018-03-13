@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ISVImageScrollView'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A subclass of the UIScrollView tweaked for image preview with zooming, scrolling and rotation support.'
 
 # This description is used to generate tags and improve search results.
