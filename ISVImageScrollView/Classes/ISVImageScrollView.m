@@ -75,11 +75,17 @@ static void *ScrollViewBoundsChangeNotificationContext = &ScrollViewBoundsChange
     return 1;
 }
 
-- (CGSize)rectSizeForAspectRatio:(CGFloat)ratio thatFitsSize:(CGSize)size {
+- (CGSize)rectSizeForAspectRatio: (CGFloat)ratio
+                    thatFitsSize: (CGSize)size
+{
     CGFloat containerWidth = size.width;
     CGFloat containerHeight = size.height;
     CGFloat resultWidth = 0;
     CGFloat resultHeight = 0;
+    
+    if ((ratio <= 0) || (containerHeight <= 0)) {
+        return size;
+    }
     
     if (containerWidth / containerHeight >= ratio) {
         resultHeight = containerHeight;
@@ -93,20 +99,36 @@ static void *ScrollViewBoundsChangeNotificationContext = &ScrollViewBoundsChange
     return CGSizeMake(resultWidth, resultHeight);
 }
 
-- (void)scaleImageForScrollViewTransitionFromBounds:(CGRect)oldBounds toBounds:(CGRect)newBounds {
-    CGPoint oldContentOffset = CGPointMake(oldBounds.origin.x, oldBounds.origin.y);
+- (void)scaleImageForScrollViewTransitionFromBounds: (CGRect)oldBounds
+                                           toBounds: (CGRect)newBounds
+{
+    CGPoint oldContentOffset = CGPointMake(
+                                           oldBounds.origin.x,
+                                           oldBounds.origin.y
+                                           );
     CGSize oldSize = oldBounds.size;
     CGSize newSize = newBounds.size;
     
-    CGSize containedImageSizeOld = [self rectSizeForAspectRatio:self.imageAspectRatio
-                                                   thatFitsSize:oldSize];
+    CGSize containedImageSizeOld = [self rectSizeForAspectRatio: self.imageAspectRatio
+                                                   thatFitsSize: oldSize];
     
-    CGSize containedImageSizeNew = [self rectSizeForAspectRatio:self.imageAspectRatio
-                                                   thatFitsSize:newSize];
+    CGSize containedImageSizeNew = [self rectSizeForAspectRatio: self.imageAspectRatio
+                                                   thatFitsSize: newSize];
     
-    CGFloat orientationRatio = containedImageSizeNew.height / containedImageSizeOld.height;
+    if (containedImageSizeOld.height <= 0) {
+        containedImageSizeOld = containedImageSizeNew;
+    }
     
-    CGAffineTransform t = CGAffineTransformMakeScale(orientationRatio, orientationRatio);
+    CGFloat orientationRatio = (
+                                containedImageSizeNew.height /
+                                containedImageSizeOld.height
+                                );
+    
+    CGAffineTransform t = CGAffineTransformMakeScale(
+                                                     orientationRatio,
+                                                     orientationRatio
+                                                     );
+    
     self.imageView.frame = CGRectApplyAffineTransform(self.imageView.frame, t);
     
     self.contentSize = self.imageView.frame.size;
@@ -146,7 +168,8 @@ static void *ScrollViewBoundsChangeNotificationContext = &ScrollViewBoundsChange
         CGRect oldRect = ((NSValue *)change[NSKeyValueChangeOldKey]).CGRectValue;
         CGRect newRect = ((NSValue *)change[NSKeyValueChangeNewKey]).CGRectValue;
         if (! CGSizeEqualToSize(oldRect.size, newRect.size)) {
-            [self scaleImageForScrollViewTransitionFromBounds:oldRect toBounds:newRect];
+            [self scaleImageForScrollViewTransitionFromBounds: oldRect
+                                                     toBounds: newRect];
         }
     }
 }
