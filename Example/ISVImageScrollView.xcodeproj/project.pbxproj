@@ -211,7 +211,6 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				88F6AB14CEB2B58EC889DA78 /* [CP] Embed Pods Frameworks */,
-				84A76DEB1C6104C05743EAA3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,8 +229,6 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				4E2AFD0230D6F25592A36611 /* [CP] Embed Pods Frameworks */,
-				5C636EC7EF66899CDAFFB571 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -319,58 +316,13 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4E2AFD0230D6F25592A36611 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ISVImageScrollView_Tests/Pods-ISVImageScrollView_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5C636EC7EF66899CDAFFB571 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ISVImageScrollView_Tests/Pods-ISVImageScrollView_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		84A76DEB1C6104C05743EAA3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ISVImageScrollView_Example/Pods-ISVImageScrollView_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		88F6AB14CEB2B58EC889DA78 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ISVImageScrollView_Example/Pods-ISVImageScrollView_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ISVImageScrollView_Example/Pods-ISVImageScrollView_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ISVImageScrollView/ISVImageScrollView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -379,7 +331,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ISVImageScrollView_Example/Pods-ISVImageScrollView_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ISVImageScrollView_Example/Pods-ISVImageScrollView_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8E5659208D511A72A86EB79C /* [CP] Check Pods Manifest.lock */ = {
