@@ -31,7 +31,7 @@ This control provides you out-of-the-box functionality to zoom, scroll and rotat
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'ISVImageScrollView/Classes/**/*'
+  s.source_files = 'Sources/ISVImageScrollView/**/*'
   
   # s.resource_bundles = {
   #   'ISVImageScrollView' => ['ISVImageScrollView/Assets/*.png']
