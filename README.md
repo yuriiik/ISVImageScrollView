@@ -28,12 +28,17 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-ISVImageScrollView is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+### CocoaPods
+
+ISVImageScrollView is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'ISVImageScrollView'
 ```
+
+### Swift Package Manager
+
+ISVImageScrollView is also available via the Swift Package Manager.
 
 ## Usage
 
