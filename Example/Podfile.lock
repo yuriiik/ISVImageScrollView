@@ -1,5 +1,5 @@
 PODS:
-  - ISVImageScrollView (0.2.0)
+  - ISVImageScrollView (0.3.0)
 
 DEPENDENCIES:
   - ISVImageScrollView (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ISVImageScrollView: c33365cb383b8b2365d0519d184ab11bae3eba44
+  ISVImageScrollView: 2c89840496647af985bfc0e09b346b9aa733ecec
 
-PODFILE CHECKSUM: 0e63ccf63cc896093e8fda881f47727c33ea0f45
+PODFILE CHECKSUM: 4744aa60aeb8810abf35643611a82180bdf82304
 
 COCOAPODS: 1.9.1

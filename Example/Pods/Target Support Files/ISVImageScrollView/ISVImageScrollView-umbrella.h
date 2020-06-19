@@ -10,7 +10,6 @@
 #endif
 #endif
 
-#import "ISVImageScrollView.h"
 
 FOUNDATION_EXPORT double ISVImageScrollViewVersionNumber;
 FOUNDATION_EXPORT const unsigned char ISVImageScrollViewVersionString[];

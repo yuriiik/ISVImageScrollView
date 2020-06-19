@@ -4,8 +4,6 @@ target 'ISVImageScrollView_Example' do
   pod 'ISVImageScrollView', :path => '../'
 
   target 'ISVImageScrollView_Tests' do
-    inherit! :search_paths
-
-    
+    inherit! :search_paths    
   end
 end

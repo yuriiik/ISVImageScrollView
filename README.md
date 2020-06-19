@@ -48,16 +48,16 @@ ISVImageScrollView is very easy to use.
 3. Don't forget to set __maximumZoomScale__ and __delegate__ properties of the ISVImageScrollView instance.
 4. Finally in delegate class implement __viewForZoomingInScrollView:__ method and return the UIImageView object created in step 1.
 
-```objc
-UIImage *image = [UIImage imageNamed:@"Photo.jpg" inBundle:nil compatibleWithTraitCollection:nil];
-self.imageView = [[UIImageView alloc] initWithImage:image];
-self.imageScrollView.imageView = self.imageView;
-self.imageScrollView.maximumZoomScale = 4.0;
-self.imageScrollView.delegate = self;
+```swift
+let image = UIImage(named: "Photo.jpg")
+self.imageView = UIImageView(image: image)
+self.imageScrollView.imageView = self.imageView
+self.imageScrollView.maximumZoomScale = 4.0
+self.imageScrollView.delegate = self
 ```
-```objc
-- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
-    return self.imageView;
+```swift
+func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+  return self.imageView
 }
 ```
 
