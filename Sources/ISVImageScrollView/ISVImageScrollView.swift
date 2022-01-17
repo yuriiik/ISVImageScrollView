@@ -100,13 +100,17 @@ public class ISVImageScrollView: UIScrollView, UIGestureRecognizerDelegate {
       self.zoom(to: zoomRect, animated: true)
     }
   }
+  
+  // MARK: - Public: Geometry
+  
+  public var defaultAspectRatio: CGFloat = 1
 
   // MARK: - Private: Geometry
   
   private var initialImageFrame: CGRect = .null
   
   private var imageAspectRatio: CGFloat {
-    guard let image = self.imageView?.image else { return 1 }
+    guard let image = self.imageView?.image else { return defaultAspectRatio }
     return image.size.width / image.size.height
   }
   
